@@ -16,6 +16,7 @@ namespace CSLT.session03
                 double kelvin = celsius + 273;
                 double fah = celsius + 32 * 1.8;
                 Console.WriteLine($"Do K: {kelvin}");
+
                 Console.WriteLine($"Do F: {fah}");
             }    
 

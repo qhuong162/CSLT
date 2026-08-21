@@ -19,7 +19,7 @@ namespace CSLT.session02
             int temp = number1;
             number1 = number2;
             number2 = temp;
-            Console.WriteLine($"2.After swap number1={number2}, number 2{number1}");
+            Console.WriteLine($"2.After swap number1={number1}, number 2={number2}");
 
             //3. to Multiply two Floating Point Numbers
             float f1 = 8.74f, f2 = 5.6f;

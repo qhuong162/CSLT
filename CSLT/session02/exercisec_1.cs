@@ -8,7 +8,7 @@ namespace CSLT.session02
 {
     internal class exercisec_1
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             int number1 = 20, number2 = 15;
             //1. to Add / Sum Two Numbers.

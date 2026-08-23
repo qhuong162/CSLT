@@ -6,7 +6,7 @@ namespace CSLT.session03
 {
     internal class Ex1
     {
-        public static void Main(string[] args)
+        public static void Main2(string[] args)
         {
             Console.Write("Nhap do C:");
             string input = Console.ReadLine();
@@ -16,7 +16,6 @@ namespace CSLT.session03
                 double kelvin = celsius + 273;
                 double fah = celsius + 32 * 1.8;
                 Console.WriteLine($"Do K: {kelvin}");
-
                 Console.WriteLine($"Do F: {fah}");
             }    
 

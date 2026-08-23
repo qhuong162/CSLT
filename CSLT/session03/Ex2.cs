@@ -9,6 +9,7 @@ namespace CSLT.session03
     {
         static void Bai_1()
         {
+            Console.WriteLine("Bài 1");
             Console.WriteLine("Nhập vào chỉ số điện cũ (kWh):");
             float csd_cu = float.Parse(Console.ReadLine());
             float csd_moi;
@@ -56,20 +57,9 @@ namespace CSLT.session03
             Console.WriteLine($"Tiền thuế VAT: {tienVat:C} VNĐ");
             Console.WriteLine($"Tổng tiền phải thanh toán: {(tienDien + tienVat):C} VNĐ");
         }           
-        public static void Main(string[] args)
+        static void Bai_2()
         {
-            Console.OutputEncoding = Encoding.UTF8;
-            Bai_1();
-            //• Nhập vào chiều cao (tính bằng mét, ví dụ 1.72) và cân nặng (tính bằng kg, ví dụ 68.5).
-            //• Tính chỉ số BMI theo công thức: BMI = Cân nặng / (Chiều cao ^ 2).
-            //• Phân loại tình trạng sức khỏe theo chuẩn WHO dành cho người châu Á:
-            //• +BMI < 18.5: Gầy(Thiếu cân)
-            //• +18.5 <= BMI < 23.0: Bình thường(Lý tưởng)
-            //• +23.0 <= BMI < 25.0: Thừa cân(Tiền béo phì)
-            //• +BMI >= 25.0: Béo phì
-            //• Tính dải cân nặng lý tưởng cho chiều cao đó (Cân nặng tối thiểu = 18.5 * Chiều cao^2; Cân nặng tối đa =
-            //22.9 * Chiều cao^2).
-            //• Xuất ra chỉ số BMI (lấy 2 chữ số thập phân), phân loại và khoảng cân nặng lý tưởng
+            Console.WriteLine("Bài 2");
             Console.WriteLine("Nhập vào chiều cao(m):");
             double chieuCao = double.Parse(Console.ReadLine());
             Console.WriteLine("Nhập vào cân nặng (kg)");
@@ -77,9 +67,26 @@ namespace CSLT.session03
 
             double bmi = canNang / Math.Pow(chieuCao, 2);
             Console.WriteLine($"Chỉ số BMI của bạn: {bmi:F2} ");
-            if(bmi< 18.5)
-                Console.WriteLine("");
+            if (bmi < 18.5)
+                Console.WriteLine("Phân loại sức khỏe: Gầy(Thiếu cân)");
+            else if (bmi >= 18.5 && bmi < 23)
+                Console.WriteLine("Phân loại sức khỏe: Bình thường(Lý tưởng)");
+            else if (bmi >= 23 && bmi < 25)
+                Console.WriteLine("Phân loại sức khỏe: Thừa cân(Tiền béo phì)");
+            else
+                Console.WriteLine("Phân loại sức khỏe: Béo phì");
+            double canNangToiThieu = 18.5 * Math.Pow(chieuCao, 2);
+            double canNangToiDa = 22.9 * Math.Pow(chieuCao, 2);
+            Console.WriteLine($"Khuyên dùng: Cân nặng lý tưởng của bạn nên từ {canNangToiThieu:F2} kg đến {canNangToiDa:F2} kg");
+        }
+           
+        public static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+            Bai_1();
+            Bai_2();
 
+           
 
 
             Console.ReadKey();

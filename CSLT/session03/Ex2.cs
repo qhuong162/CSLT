@@ -95,15 +95,7 @@ namespace CSLT.session03
 //• Phí dịch vụ quy đổi là 0.5 % trên tổng số tiền VNĐ.
 //• Tính số tiền VNĐ thực tế sau khi trừ phí, sau đó quy đổi ra ngoại tệ tương ứng.
 //• In kết quả chính xác đến 2 chữ số thập phân kèm ký hiệu tiền tệ.
-         enum CurrenccyType
-        {
-            USD,
-            EUR,
-            JPY,
-            GBP
-        }
-        decimal tienTe;
-        const decimal tienUSD =
+        
 
 
 

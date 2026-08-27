@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace CSLT.session03
 {
 
-    internal class Ex2
+    internal class Ex_kieu_du_lieu
 
     {
         enum CurrencyType

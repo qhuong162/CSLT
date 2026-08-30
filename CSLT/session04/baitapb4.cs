@@ -117,7 +117,9 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session04
                 Console.WriteLine($"Tọa độ ({x}, {y}) nằm ở góc phần tư thứ ba");
             else if(x > 0 && y < 0)
                 Console.WriteLine($"Tọa độ ({x}, {y}) nằm ở góc phần tư thứ tư");
-            else Console.WriteLine("Tọa độ ({x}, {y}) nằm trên trục tọa độ hoặc tại gốc toạ độ");
+            else if(x==0 && y==0)
+                Console.WriteLine($"Tọa độ ({x}, {y}) nằm tại gốc toạ độ");
+            else Console.WriteLine("Tọa độ ({x}, {y}) nằm trên trục tọa độ");
         }
 
 
@@ -129,6 +131,7 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session04
             Tim_max();
             Equilateral_Isosceles_Scalene();
             Xac_dinh_goc_phan_tu();
+            Console.ReadKey();
         }
     }
 }

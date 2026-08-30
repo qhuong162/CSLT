@@ -815,7 +815,7 @@ namespace CSLT.session03
                 Console.WriteLine($"TỔNG TIỀN VÉ:      {finalPrice:N0} VNĐ");
             }
        
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             Bai_1();

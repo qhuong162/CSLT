@@ -27,6 +27,8 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session05
             else Console.WriteLine("Ba cạnh đã nhập không phải là cạnh của một tam giác");
         }
         public static void Main (string[] args)
+
+
         {
 //1. Write a program to check whether a triangle is Equilateral, Isosceles or Scalene.
 

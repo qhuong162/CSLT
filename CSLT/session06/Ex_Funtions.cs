@@ -435,7 +435,6 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session06
             Bai19();
             Bai20();
             Console.ReadKey();
-
         }
     }
 }

@@ -124,7 +124,7 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session04
 
 
 
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             Giai_phuong_trinh_bac_hai();
             Odd_or_even();

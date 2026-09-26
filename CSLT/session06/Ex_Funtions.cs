@@ -411,7 +411,7 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session06
             int soTu = Ham.DemSoTu(sentence);
             Console.WriteLine($"Số từ trong câu là: {soTu}\n");
         }
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             Bai1();

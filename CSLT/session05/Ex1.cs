@@ -26,7 +26,7 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session05
             }   
             else Console.WriteLine("Ba cạnh đã nhập không phải là cạnh của một tam giác");
         }
-        public static void Main (string[] args)
+        public static void Main1 (string[] args)
 
 
         {

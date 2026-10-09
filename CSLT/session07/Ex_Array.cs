@@ -392,7 +392,7 @@ namespace CSLT_VoNgocQuynhHuong_31251026030.session07
             Console.WriteLine();
         }
    
-        static void Main(string[ ] args)
+        static void Maian(string[ ] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             Bai_1();
